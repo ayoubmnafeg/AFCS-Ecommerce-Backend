@@ -19,7 +19,7 @@ app.use("/api/articles", articleRouter);
 mongoose.set("strictQuery", false);
 // Connexion à la base données
 mongoose
-  .connect(process.env.DATABASE, {
+  .connect(process.env.DATABASECLOUD, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
